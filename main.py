@@ -102,14 +102,5 @@ async def extract_text_from_pdf(file: UploadFile = UploadFile(...)):
 
 
 # specify a port
-port = 8000
-ngrok_tunnel = ngrok.connect(port)
-
-# where we can visit our fastAPI app
-print('Public URL:', ngrok_tunnel.public_url)
-
-
-nest_asyncio.apply()
-
-# finally run the app
-uvicorn.run(app, port=port)
+if __name__ == "__main__":
+   uvicorn.run("main:app", host="127.0.0.1", port=8000, reload=True)
