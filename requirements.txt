@@ -1,0 +1,13 @@
+# requirements.txt
+
+PyPDF2==1.26.0
+transformers==4.11.3
+pytesseract==0.3.8
+PyMuPDF==1.18.20
+sentencepiece==0.1.96
+colabcode==0.3.0
+fastapi==0.103.2
+nest-asyncio==1.5.1
+pyngrok==5.2.0
+uvicorn==0.15.0
+python-multipart==0.0.5
